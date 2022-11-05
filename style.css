@@ -56,7 +56,7 @@ header p {
 form {
   background: #fafafc;
   padding: 64px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   margin-top: 42px;
   display: flex;
   flex-direction: column;
@@ -116,6 +116,7 @@ fieldset legend {
 .input-wrapper select {
   background: #fafafc;
   border: 1px solid #e6e6f0;
+  border-radius: 8px;
   height: 56px;
   padding: 0 24px;
   font-size: 16px;
@@ -126,6 +127,7 @@ fieldset legend {
 .input-wrapper textarea {
   height: 168px;
   padding: 24px;
+  resize: none;
 }
 
 .input-wrapper select {
@@ -180,4 +182,31 @@ fieldset legend {
 
 .col-3 > div:nth-child(1){
   width: 100%;
+}
+
+footer{
+  background: #F0F0F4;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 64px;
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid #c1bccc;
+}
+
+footer input{
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  background: #04D361;
+  color: #FFFFFF;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+footer input:hover{
+  background: #47f796;
+}
+
+input:required:not(:placeholder-shown):invalid{
+  border: 1px solid #ff1010;
 }
