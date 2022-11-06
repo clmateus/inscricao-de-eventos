@@ -1,1 +1,1 @@
-# inscricao-de-eventos
+# Inscrição de Eventos
